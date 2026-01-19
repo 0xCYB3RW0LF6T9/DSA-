@@ -19,12 +19,9 @@ void inserting(int a[],int size,int val,int index)
 }
 void deleting(int a[],int size, int index)
 {
-    for(int i=0; i<size; i++)
+    for(int i=index; i<size; i++)
     {
-        if(i==index)
-        {
-            a[i]=a[i+1];
-        }
+        a[i]=a[i+1];
     }
 
 
@@ -81,3 +78,4 @@ int main()
     show(a,size);
     return 0;
 }
+
